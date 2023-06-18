@@ -18,6 +18,13 @@ public class Storage {
 
     }
 
+    public void indexSalaries() {
+
+        for (Employee employee : employees) {
+            employee.setSalary(employee.getSalary() + employee.getSalary()/10);
+        }
+    }
+
     public void printAllEmployees() {
         for (Employee employee : employees) {
             System.out.println(employee);
@@ -61,6 +68,5 @@ public class Storage {
         for (Employee employee : employees) {
             System.out.println(employee.getFullName());
         }
-
     }
 }

@@ -21,7 +21,8 @@ public class Storage {
     public void indexSalaries() {
 
         for (Employee employee : employees) {
-            employee.setSalary(employee.getSalary() + employee.getSalary()/10);
+            int index = employee.getSalary()/100 * 5;
+            employee.setSalary(employee.getSalary() + index);
         }
     }
 
@@ -69,4 +70,5 @@ public class Storage {
             System.out.println(employee.getFullName());
         }
     }
+
 }

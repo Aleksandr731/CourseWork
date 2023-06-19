@@ -1,6 +1,8 @@
 public class Main {
+
     public static void main(String[] args) {
         Storage storage = new Storage();
+        storage.indexSalaries();
         storage.printAllEmployees();
         System.out.println("==========================================================");
         System.out.println("Сумма всех зарплат " + storage.calculateAllSalaries());

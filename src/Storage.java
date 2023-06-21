@@ -18,10 +18,9 @@ public class Storage {
 
     }
 
-    public void indexSalaries() {
-
+    public void indexSalaries(int indexPercent) {
         for (Employee employee : employees) {
-            int index = employee.getSalary()/100 * 5;
+            int index = employee.getSalary()/100 * indexPercent;
             employee.setSalary(employee.getSalary() + index);
         }
     }

@@ -41,11 +41,19 @@ public class Employee {
         this.division = division;
     }
 
-    public void setSalary(int salary) { this.salary = salary; }
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
     public String toString() {
         return "Сотрудник: " + this.name + " "
                 + this.surname + " " + this.patronymic + ", работает в отделе: " + this.division +
                 ", получает зарплату " + this.salary + ". id сотрудника: " + this.id;
 
+    }
+
+    public String getFullName() {
+        return "Сотрудник: " + this.name + " "
+                + this.surname + " " + this.patronymic;
     }
 }
